@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unidad 1 · Aquella vez 2</title>
+  <meta name="description" content="Aquella vez 2, manual de español de Luis Fader. Unidad 1: diálogos con traducción al ruso y ejercicios interactivos.">
+  <meta name="theme-color" content="#402611">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <div class="barra__fila">
+        <a class="marca" href="index.html" title="Volver al inicio">Aquella vez <span>2</span></a>
+        <div class="barra__espacio"></div>
+        <div class="progreso-mini" title="Ejercicios completados en esta unidad">
+          <span>0/0 ejercicios</span>
+          <div class="progreso-mini__barra"><i></i></div>
+        </div>
+      </div>
+      <nav class="pestanas" id="pestanas" aria-label="Apartados de la unidad"></nav>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <section class="hero" aria-label="Portada de la unidad">
+      <picture>
+        <source srcset="img/u1-portada.webp" type="image/webp">
+        <img class="hero__fondo" src="img/u1-portada.jpg" alt="Natalia en una plaza con el manual en las manos">
+      </picture>
+      <div class="hero__texto">
+        <p class="hero__antetitulo">Aquella vez 2</p>
+        <h1>Unidad 1</h1>
+        <p>Gustos, recuerdos y rutinas: lo que nos gusta, lo que hicimos ayer y cómo es un día de nuestra vida.</p>
+      </div>
+    </section>
+
+    <div class="guia" aria-label="Cómo usar esta página">
+      <div class="guia__item"><span class="icono">👆</span><div><strong>Palabras subrayadas</strong>Pasa el cursor o toca la palabra para ver la traducción.<br><small>Наведите или нажмите — увидите перевод.</small></div></div>
+      <div class="guia__item"><span class="icono">🔊</span><div><strong>Escuchar</strong>Pulsa el altavoz para oír cada frase.<br><small>Нажмите на динамик, чтобы послушать.</small></div></div>
+      <div class="guia__item"><span class="icono">✅</span><div><strong>Comprobar</strong>Haz los ejercicios y pulsa «Comprobar».<br><small>Выполните задание и проверьте себя.</small></div></div>
+    </div>
+  </div>
+
+  <main class="contenedor" id="secciones"></main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <span class="firma">Luis Fader</span>
+      Aquella vez 2 · Manual de español para extranjeros
+      <p style="margin:12px 0 0;font-size:14px">
+        <label style="cursor:pointer"><input type="checkbox" id="interruptor-glosario" checked> Resaltar palabras con traducción</label>
+        &nbsp;·&nbsp; <button id="reiniciar" type="button" style="background:none;border:0;color:var(--azul);text-decoration:underline;cursor:pointer;font-size:14px">Borrar mi progreso</button>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/manual.js"></script>
+  <script src="js/unidad1.js"></script>
+  <script>Manual.montarUnidad(window.UNIDAD);</script>
+</body>
+</html>

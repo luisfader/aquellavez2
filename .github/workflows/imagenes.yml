@@ -16,6 +16,7 @@ jobs:
           mkdir -p img tmp
           while read -r nombre ancho url; do
             [ -z "$nombre" ] && continue
+            [ -f "img/$nombre.jpg" ] && { echo "ya existe $nombre"; continue; }
             echo "→ $nombre"
             curl -sSfL -o "tmp/$nombre.png" "$url" || { echo "falló $nombre"; continue; }
             convert "tmp/$nombre.png" -resize "${ancho}x>" -strip -quality 84 "img/$nombre.jpg"
